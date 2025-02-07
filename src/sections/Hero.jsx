@@ -36,7 +36,7 @@ export default function Hero() {
                 <motion.button style={{border,boxShadow}} className="rounded-full px-2 py-0.5">
                     <Link href="#projects" scroll={true}>View Projects</Link>
                 </motion.button>
-                <motion.a href="/resume.pdf" download style={{border,boxShadow}} className="rounded-full px-2 py-0.5">
+                <motion.a href="/Rohit_resume.pdf" download style={{border,boxShadow}} className="rounded-full px-2 py-0.5">
                     Download Resume
                 </motion.a>
             </div>
