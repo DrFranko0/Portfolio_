@@ -3,6 +3,7 @@ import { useState,useEffect } from "react";
 import { useMotionValue,useMotionTemplate } from "framer-motion";
 import { animate } from "framer-motion";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const COLORS_TOP=["#13FFAA","#1E67C6","#CE84CF","#DD335C"]
 
@@ -33,11 +34,11 @@ export default function Hero() {
             </div>
             <div className="flex flex-row justify-center text-center gap-4 mt-6">
                 <motion.button style={{border,boxShadow}} className="rounded-full px-2 py-0.5">
-                    View Projects
+                    <Link href="#projects" scroll={true}>View Projects</Link>
                 </motion.button>
-                <motion.button style={{border,boxShadow}} className="rounded-full px-2 py-0.5">
+                <motion.a href="/resume.pdf" download style={{border,boxShadow}} className="rounded-full px-2 py-0.5">
                     Download Resume
-                </motion.button>
+                </motion.a>
             </div>
         </motion.section>
     )

@@ -58,7 +58,7 @@ const About = () => {
 
 
     return (
-    <motion.div style={{backgroundImage}} className="min-h-screen flex flex-col justify-center items-center px-6 py-12">
+    <motion.div style={{backgroundImage}} id='about' className="min-h-screen flex flex-col justify-center items-center px-6 py-12">
       <motion.h1 style={{border,boxShadow}} className="text-3xl w-fit rounded-full px-2 py-0.5 mb-12 text-center">Stack</motion.h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {technologies.map((tech, index) => (
